@@ -1,25 +1,40 @@
-@'
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <title>My Tweets</title>
 </head>
 <body>
-  <h1>My Favorite Tweet</h1>
+  <header>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="tweets.html">Tweets</a></li>
+    </ul>
+  </header>
 
-  <!-- Embedded Tweet: the class must be exactly "twitter-tweet" -->
-  <blockquote class="twitter-tweet">
-    <p lang="en" dir="ltr">
-      This is a sample embedded tweet used for validation testing. Learning by doing. 🚀
-    </p>
-    &mdash; Sample User (<a href="https://twitter.com/Twitter/status/20">https://twitter.com/Twitter/status/20</a>)
-  </blockquote>
+  <main>
+    <article>
+      <h1>My Favorite Tweet</h1>
 
-  <!-- Twitter widget script (required to render the embed in a browser) -->
-  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      <!-- Embedded Tweet -->
+      <blockquote class="twitter-tweet">
+        <p lang="en" dir="ltr">
+          Learning never exhausts the mind. 💡<br>
+          — Leonardo da Vinci
+        </p>
+        &mdash; Example Tweet (<a href="https://twitter.com/Twitter/status/20">https://twitter.com/Twitter/status/20</a>)
+      </blockquote>
 
-  <p><a href="index.html">← Back to Homepage</a></p>
+      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </article>
+
+    <aside>
+      <p>placeholder to add comment thread later</p>
+    </aside>
+  </main>
+
+  <footer>
+    <p>Made by Brownie - <a href="https://github.com/Brownie" target="_blank">here</a>.</p>
+  </footer>
 </body>
 </html>
-'@ | Out-File -FilePath tweets.html -Encoding utf8

@@ -1,14 +1,30 @@
-@'
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <title>My First Portfolio</title>
 </head>
 <body>
-  <h1>Welcome to My First Portfolio</h1>
-  <p>This is my homepage.</p>
-  <p><a href="tweets.html">See my tweets →</a></p>
+  <header>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="tweets.html">Tweets</a></li>
+    </ul>
+  </header>
+
+  <main>
+    <article>
+      <h1>Welcome to My First Portfolio</h1>
+      <p>This is my homepage where I’ll share my projects and creativity.</p>
+    </article>
+
+    <aside>
+      <p>placeholder to add comment thread later</p>
+    </aside>
+  </main>
+
+  <footer>
+    <p>Made by Brownie - <a href="https://github.com/Brownie" target="_blank">here</a>.</p>
+  </footer>
 </body>
 </html>
-'@ | Out-File -FilePath index.html -Encoding utf8
